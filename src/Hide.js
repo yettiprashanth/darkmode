@@ -5,7 +5,7 @@ import image3 from "./images/suits-me-online.jpg"
 import image4 from "./images/washing-machine.png"
 import './App.css';
 import ReactSwitch from 'react-switch'
-import ClipLoader from "react-spinners/ClipLoader";
+// import ClipLoader from "react-spinners/ClipLoader";
 
 export const themeContext=createContext(null)
 function Hide() {
@@ -14,7 +14,7 @@ function Hide() {
     setTheme((curr)=>(curr==="light" ? "dark" :'light'))
   }
   return (
-    <>{}
+    <>
     <themeContext.Provider value={{theme,toggleTheme}}>
       <div className="switch">
         <label className='me-2'>{theme==="light" ? "Light Mode" :"Dark Mode" }</label>
